@@ -28,13 +28,7 @@ function Content({ ratio, header, title, body, name, job, mobileSize }: Props) {
 			) : (
 				<Container ratio={ratio}>
 					<Text type='secondary' color='primary' text={header} size='xsm' />
-					<Text
-						style='bold'
-						color='primary'
-						text={title}
-						size='lg'
-						lineHeight='80%'
-					/>
+					<Text style='bold' color='primary' text={title} size='lg' />
 					<Text size='sm' color='primaryLight' text={body} />
 					<Button text={`Let's work together`} />
 				</Container>
