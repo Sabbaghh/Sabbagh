@@ -26,7 +26,7 @@ interface ProfileContent {
 const elementRatio = {
 	title: 1,
 	avatar: 7,
-	content: 5,
+	content: 7,
 };
 interface Props {
 	mobileSize?: boolean;

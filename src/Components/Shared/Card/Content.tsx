@@ -38,9 +38,9 @@ function Content({ ratio, header, title, body, name, job, mobileSize }: Props) {
 }
 
 const Container = styled(Flex)`
-	padding: ${(props) => props.theme.padding.sm};
+	/* padding: ${(props) => props.theme.padding.sm}; */
 	align-items: flex-start;
-	gap: 10px;
+	gap: 5px;
 `;
 
 export default Content;

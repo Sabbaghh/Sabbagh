@@ -42,8 +42,12 @@ const ButtonStyled = styled.div`
 const ButtonOutLine = styled(ButtonStyled)`
 	z-index: 1;
 	position: absolute;
-	left: 15px;
-	top: 15px;
+	left: 5px;
+	top: 5px;
+	@media (min-width: 850px) {
+		left: 15px;
+		top: 15px;
+	}
 `;
 
 export default Button;

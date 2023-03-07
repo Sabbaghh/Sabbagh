@@ -2,8 +2,8 @@ import React from 'react';
 import localFont from 'next/font/local';
 import styled from 'styled-components';
 const SFMono = localFont({ src: '../../Fonts/SFMonoRegular.otf' });
-const InterRegular = localFont({ src: '../../Fonts/InterRegular.ttf' });
-const InterSemibold = localFont({ src: '../../Fonts/InterSemiBold.ttf' });
+const CalibreRegular = localFont({ src: '../../Fonts/CalibreRegular.otf' });
+const CalibreSemibold = localFont({ src: '../../Fonts/CalibreSemibold.otf' });
 
 interface Props {
 	type?: string;
@@ -37,7 +37,7 @@ function Text({
 				<StyledText
 					type={type}
 					size={size}
-					className={InterRegular.className}
+					className={CalibreRegular.className}
 					color={color}
 				>
 					{text}
@@ -48,7 +48,7 @@ function Text({
 				<StyledText
 					type={type}
 					size={size}
-					className={InterSemibold.className}
+					className={CalibreSemibold.className}
 					color={color}
 				>
 					{text}
@@ -65,6 +65,7 @@ const StyledText = styled.span<Props>`
 			: props.theme.colors.secondary};
 	font-size: ${(props) =>
 		props.size ? props.theme.fontSize[props.size] : props.theme.fontSize.md};
+
 	/* border: 1px solid red; */
 `;
 export default Text;
