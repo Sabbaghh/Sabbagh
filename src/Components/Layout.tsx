@@ -19,7 +19,10 @@ function Layout({ children }: Props) {
 const Container = styled.div`
 	display: flex;
 	justify-content: center;
-	width: 100vw;
+	flex-direction: column;
+	@media (min-width: 2000px) {
+		padding: ${(props) => props.theme.padding.lg};
+	}
 `;
 
 export default Layout;
