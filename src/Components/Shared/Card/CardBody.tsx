@@ -49,14 +49,14 @@ const CardBodyStyled = styled.div`
 	flex-direction: column;
 	justify-content: center;
 	align-items: flex-start;
-	/* gap: 2%; */
+	margin-top: 1em;
 	@media (min-width: 768px) {
 		display: none;
 	}
 `;
 
 const BodyItem = styled.div`
-	margin-bottom: 0.5em;
+	/* margin-bottom: 0.em; */
 `;
 
 export default CardBody;
