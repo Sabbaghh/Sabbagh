@@ -7,10 +7,9 @@ import CardFooter from './CardFooter';
 import { CardProps } from './types';
 function Card(props: CardProps) {
 	const {
-		type,
+		cardtype,
 		social,
 		tag,
-		tagNumber,
 		avatar,
 		title,
 		subtitle,
@@ -23,20 +22,19 @@ function Card(props: CardProps) {
 		<CardContainer>
 			<MainCard>
 				<CardHeader
-					type={type}
+					cardtype={cardtype}
 					title={title}
 					social={social}
 					tag={tag}
-					tagNumber={tagNumber}
 				/>
 				<CardAvatar avatar={avatar} />
 				<CardBody
-					type={type}
+					cardtype={cardtype}
 					title={title}
 					subtitle={subtitle}
 					description={description}
 				/>
-				<CardFooter meta={meta} name={name} def={def} type={type} />
+				<CardFooter meta={meta} name={name} def={def} cardtype={cardtype} />
 			</MainCard>
 			<CardOutLine />
 		</CardContainer>

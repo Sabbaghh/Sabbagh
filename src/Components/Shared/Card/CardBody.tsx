@@ -3,8 +3,8 @@ import Text, { types } from '../Text';
 import styled from 'styled-components';
 import { cardTypes, BodyProps } from './types';
 function CardBody(props: BodyProps) {
-	const { type, description, title, subtitle } = props;
-	switch (type) {
+	const { cardtype, description, title, subtitle } = props;
+	switch (cardtype) {
 		case cardTypes.project:
 			return (
 				<CardBodyStyled>

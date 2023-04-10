@@ -5,11 +5,11 @@ import Button from '../Button';
 import { FooterProps, cardTypes } from './types';
 import ProjectMeta from '../ProjectMeta';
 function CardFooter(props: FooterProps) {
-	const { type = 'profile', name, def, meta } = props;
-	switch (type) {
+	const { cardtype = 'profile', name, def, meta } = props;
+	switch (cardtype) {
 		case cardTypes.project:
 			return (
-				<CardFooterStyled type={type}>
+				<CardFooterStyled cardtype={cardtype}>
 					<ProjectMeta meta={meta} />
 				</CardFooterStyled>
 			);
@@ -48,7 +48,8 @@ const CardFooterStyled = styled.div<FooterProps>`
 		flex: 2;
 	}
 	@media (min-width: 992px) {
-		display: ${(props) => (props.type === cardTypes.project ? 'none' : 'flex')};
+		display: ${(props) =>
+			props.cardtype === cardTypes.project ? 'none' : 'flex'};
 	}
 `;
 interface FooterItemProps {

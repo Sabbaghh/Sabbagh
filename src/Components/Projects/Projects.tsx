@@ -19,6 +19,7 @@ function Projects() {
 					tech,
 					meta,
 				} = project;
+
 				return (
 					<Section key={i}>
 						{i % 2 === 0 ? (
@@ -30,7 +31,7 @@ function Projects() {
 										social={social}
 										meta={meta}
 										avatar={avatar}
-										type={cardTypes.project}
+										cardtype={cardTypes.project}
 									/>
 								</Left>
 								<Right hidesm={true}>
@@ -64,7 +65,7 @@ function Projects() {
 										social={social}
 										meta={meta}
 										avatar={avatar}
-										type={cardTypes.project}
+										cardtype={cardTypes.project}
 									/>
 								</Right>
 							</>

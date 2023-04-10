@@ -3,15 +3,15 @@ import styled from 'styled-components';
 import Text, { types } from '../Text';
 import { HeaderProps } from './types';
 function CardHeader(props: HeaderProps) {
-	const { social, tag, tagNumber, title, type } = props;
+	const { social, tag, title, cardtype } = props;
 	return (
 		<CardHeaderStyled>
 			<HeaderItem flex='3'>
-				{type === 'project' ? (
+				{cardtype === 'project' ? (
 					<Text text={title || ' '} size='lg' type={types.primaryRegular} />
 				) : (
 					<span>
-						<Text text={tag} size='lg' type={types.primaryRegular} />
+						<Text text={tag || ''} size='lg' type={types.primaryRegular} />
 					</span>
 				)}
 			</HeaderItem>

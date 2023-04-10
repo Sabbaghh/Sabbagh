@@ -1,19 +1,18 @@
-interface IProps {
-	type?: 'profile' | 'project';
-}
+type cardType = string;
 export interface meta {
 	appstore: string;
 	playstore: string;
 	downloads: string;
 }
-interface CardProps extends IProps {
+interface CardProps {
+	cardtype?: cardType;
 	title?: string;
 	subtitle?: string;
 	description: string;
 	name?: string;
 	def?: string;
-	tag: string;
-	tagNumber: string;
+	tag?: string;
+
 	avatar?: string;
 	social: {
 		link: string;
@@ -22,24 +21,26 @@ interface CardProps extends IProps {
 	meta?: meta;
 }
 
-interface HeaderProps extends IProps {
+interface HeaderProps {
+	cardtype?: cardType;
 	social: {
 		link: string;
 		name: string;
 	};
-	tag: string;
-	tagNumber: string;
+	tag?: string;
 	title?: string;
 }
 interface AvatarProps {
 	avatar?: string;
 }
-interface BodyProps extends IProps {
+interface BodyProps {
+	cardtype?: cardType;
 	description?: string;
 	title?: string;
 	subtitle?: string;
 }
-interface FooterProps extends IProps {
+interface FooterProps {
+	cardtype?: cardType;
 	name?: string;
 	def?: string;
 	meta?: meta | any;
@@ -51,7 +52,7 @@ const cardTypes = {
 };
 export { cardTypes };
 export type {
-	IProps,
+	cardType,
 	CardProps,
 	HeaderProps,
 	BodyProps,
