@@ -1,97 +1,76 @@
 import React from 'react';
 import styled from 'styled-components';
-import Header from './Header';
-import Avatar from './Avatar';
-import Content from './Content';
-interface ProfileContent {
-	Header: {
-		title: string;
-		tag: {
-			name: string;
-			uri: string;
-		};
-	};
-	Avatar: {
-		uri: string;
-	};
-	Content: {
-		name: string;
-		job_title: string;
-		header: string;
-		title: string;
-		body: string;
-	};
-}
-
-const elementRatio = {
-	title: 1,
-	avatar: 7,
-	content: 7,
-};
-interface Props {
-	mobileSize?: boolean;
-	profileContent: ProfileContent;
-}
-function Card({ mobileSize = false, profileContent }: Props) {
+import CardHeader from './CardHeader';
+import CardAvatar from './CardAvatar';
+import CardBody from './CardBody';
+import CardFooter from './CardFooter';
+import { CardProps } from './types';
+function Card(props: CardProps) {
+	const {
+		type,
+		social,
+		tag,
+		tagNumber,
+		avatar,
+		title,
+		subtitle,
+		description,
+		name,
+		def,
+		meta,
+	} = props;
 	return (
-		<Container>
-			<CardStyled>
-				<Header
-					{...profileContent.Header}
-					mobileSize={mobileSize}
-					ratio={elementRatio.title}
+		<CardContainer>
+			<MainCard>
+				<CardHeader
+					type={type}
+					title={title}
+					social={social}
+					tag={tag}
+					tagNumber={tagNumber}
 				/>
-				<Avatar {...profileContent.Avatar} ratio={elementRatio.avatar} />
-
-				<Content
-					{...profileContent.Content}
-					ratio={elementRatio.content}
-					name={profileContent.Content.name}
-					job={profileContent.Content.job_title}
-					mobileSize={mobileSize}
+				<CardAvatar avatar={avatar} />
+				<CardBody
+					type={type}
+					title={title}
+					subtitle={subtitle}
+					description={description}
 				/>
-			</CardStyled>
-			<CardOutline />
-		</Container>
+				<CardFooter meta={meta} name={name} def={def} type={type} />
+			</MainCard>
+			<CardOutLine />
+		</CardContainer>
 	);
 }
 
-const Container = styled.div`
-	width: 100%;
-	height: 100%;
+const CardContainer = styled.div`
+	width: min(800px, 95%);
+	height: max(600px, 85%);
 	display: flex;
-	justify-content: flex-start;
-	align-items: center;
 	position: relative;
-	@media (min-width: 850px) {
-		min-width: 438px;
-		min-height: 657px;
-		width: 60%;
-		height: 95%;
-		justify-content: center;
+	justify-content: center;
+	align-items: center;
+	@media (min-width: 768px) {
+		width: min(800px, 75%);
 	}
 `;
 
-const CardStyled = styled.div`
-	display: flex;
-	width: 95%;
-	height: 80%;
-	z-index: 2;
-	border: 2px solid;
+const MainCard = styled.div`
+	width: 90%;
+	height: 97.5%;
+	border: 1px solid;
 	border-color: ${(props) => props.theme.colors.primary};
 	background: ${(props) => props.theme.colors.background};
-	flex-direction: column;
 	z-index: 2;
-`;
-const CardOutline = styled(CardStyled)`
-	margin-top: 40px;
-	margin-left: 20px;
-	position: absolute;
-	z-index: 1;
-	@media (min-width: 850px) {
-		margin-top: 30px;
-		margin-left: 30px;
-	}
+	display: flex;
+	flex-direction: column;
+	padding: ${(props) => props.theme.padding.xsm};
 `;
 
+const CardOutLine = styled(MainCard)`
+	position: absolute;
+	margin: 1vmax 0px 0px 1vmax;
+	background: ${(props) => props.theme.colors.background};
+	z-index: 1;
+`;
 export default Card;
