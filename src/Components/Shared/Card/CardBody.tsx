@@ -49,12 +49,14 @@ const CardBodyStyled = styled.div`
 	flex-direction: column;
 	justify-content: center;
 	align-items: flex-start;
-	gap: 2%;
+	/* gap: 2%; */
 	@media (min-width: 768px) {
 		display: none;
 	}
 `;
 
-const BodyItem = styled.div``;
+const BodyItem = styled.div`
+	margin-bottom: 0.5em;
+`;
 
 export default CardBody;
