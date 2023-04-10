@@ -1,62 +1,69 @@
 import React from 'react';
-import Text from '../Shared/Text';
 import styled from 'styled-components';
 import Button from '../Shared/Button';
-interface Props {
-	header?: string;
-	title?: string;
-	body?: string;
+import Text, { types } from '../Shared/Text';
+import AnimatedLogo from '../Shared/AnimatedLogo';
+interface IProps {
+	title: string;
+	subtitle: string;
+	description: string;
 }
-function Content({ header, title, body }: Props) {
+function Content(props: IProps) {
+	const { title, subtitle, description } = props;
 	return (
-		<Container>
-			<CardStyled>
-				<ItemContainer ratio={7} style={{ justifyContent: 'flex-end' }}>
-					<img src='/img/logo/Logo.png' alt='LOGO' style={{ width: '100%' }} />
-				</ItemContainer>
-				<ItemContainer
-					ratio={2}
-					style={{
-						justifyContent: 'flex-end',
-					}}
-				>
-					<Text type='secondary' color='primary' text={header} size='md' />
-					<Text style='bold' color='primary' text={title} size='xlg' />
-					<Text size='md' color='primaryLight' text={body} />
-				</ItemContainer>
-				<ItemContainer ratio={1}>
-					<Button text={`Let's work together`} size='md' />
-				</ItemContainer>
-			</CardStyled>
-		</Container>
+		<ContentContainer>
+			<ContentHeader>
+				<AnimatedLogo />
+			</ContentHeader>
+			<ContentBody>
+				<Text text={subtitle} size='sm' type={types.secondaryRegular} />
+				<Text text={title} size='xxlg' type={types.primaryBold} />
+				<Text
+					color='primaryLight'
+					text={description}
+					size='md'
+					type={types.primaryRegular}
+				/>
+			</ContentBody>
+			<ContentFooter>
+				<Button />
+			</ContentFooter>
+		</ContentContainer>
 	);
 }
 
-const Container = styled.div`
-	width: 100%;
-	height: 95%;
+const ContentContainer = styled.div`
+	width: min(900px, 85%);
+	height: max(600px, 85%);
 	display: flex;
+	justify-content: center;
+	align-items: center;
 	flex-direction: column;
+	/* padding: ${(props) => props.theme.padding.sm}; */
+`;
+
+const ContentHeader = styled.div`
+	flex: 6;
+	width: 100%;
+	display: flex;
 	justify-content: flex-start;
 	align-items: center;
-	position: relative;
+`;
+
+const ContentBody = styled.div`
+	flex: 3;
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: flex-start;
+	flex-direction: column;
+`;
+
+const ContentFooter = styled.div`
+	flex: 2;
+	display: flex;
+	width: 100%;
 	justify-content: center;
-	min-height: 657px;
+	align-items: flex-end;
 `;
-const CardStyled = styled.div`
-	display: flex;
-	width: 70%;
-	height: 80%;
-	flex-direction: column;
-	justify-content: space-between;
-	gap: 5px;
-`;
-
-const ItemContainer = styled.div`
-	/* flex: 1; */
-	display: flex;
-	flex-direction: column;
-	flex: ${(props: { ratio: number }) => props.ratio};
-`;
-
 export default Content;
