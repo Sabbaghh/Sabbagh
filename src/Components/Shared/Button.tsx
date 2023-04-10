@@ -1,53 +1,57 @@
 import React from 'react';
 import styled from 'styled-components';
-import Text from './Text';
-import Flex from './Flex';
+import Text, { types } from './Text';
 
-interface Props {
-	text?: string;
-	onClick?: () => void;
-	size?: string;
-}
-function Button({ text, size = 'xsm', onClick }: Props) {
+function Button() {
 	return (
-		<Container>
-			<ButtonOutLine>
-				<Text text={text} type='secondary' color='background' size={size} />
-			</ButtonOutLine>
-			<ButtonStyled>
-				<Text text={text} type='secondary' color='secondary' size={size} />
-			</ButtonStyled>
-		</Container>
+		<ButtonContainer>
+			<MainButton>
+				<Text
+					type={types.secondaryRegular}
+					size='sm'
+					color='secondary'
+					text={`Let's Work Together`}
+				/>
+			</MainButton>
+			<ButtonOutLine />
+		</ButtonContainer>
 	);
 }
 
-const Container = styled.div`
+const ButtonContainer = styled.div`
 	width: 100%;
-	position: relative;
-`;
-const ButtonStyled = styled.div`
-	width: 95%;
-	border: 2px solid;
-	border-color: ${(props) => props.theme.colors.secondary};
-	padding: 10px 20px;
-	background-color: ${(props) => props.theme.colors.background};
-	z-index: 10;
-	position: absolute;
-	top: 0;
-	left: 0;
+	height: 80%;
 	display: flex;
+	position: relative;
 	justify-content: center;
 	align-items: center;
-`;
-const ButtonOutLine = styled(ButtonStyled)`
-	z-index: 1;
-	position: absolute;
-	left: 5px;
-	top: 5px;
-	@media (min-width: 850px) {
-		left: 15px;
-		top: 15px;
+	// Medium devices (tablets, 768px and up)
+	@media (min-width: 768px) {
 	}
+`;
+
+const MainButton = styled.div`
+	width: 90%;
+	height: 60%;
+	border: 1px solid;
+	border-color: ${(props) => props.theme.colors.secondary};
+	background: ${(props) => props.theme.colors.background};
+	z-index: 2;
+	display: flex;
+	flex-direction: column;
+	padding: ${(props) => props.theme.padding.xsm};
+	justify-content: center;
+	align-items: center;
+	@media (min-width: 992px) {
+		width: 100%;
+		height: min(80%, 4rem);
+	}
+`;
+const ButtonOutLine = styled(MainButton)`
+	position: absolute;
+	margin: 1vmax 0px 0px 1vmax;
+	background: ${(props) => props.theme.colors.background};
+	z-index: 1;
 `;
 
 export default Button;
