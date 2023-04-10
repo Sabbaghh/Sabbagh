@@ -67,7 +67,7 @@ const MainCard = styled.div`
 
 const CardOutLine = styled(MainCard)`
 	position: absolute;
-	margin: 1vmax 0px 0px 1vmax;
+	margin: 1.2em 0px 0px 1.2em;
 	background: ${(props) => props.theme.colors.background};
 	z-index: 1;
 `;
