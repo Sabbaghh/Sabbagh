@@ -64,7 +64,8 @@ const Divider = styled.div`
 `;
 
 const ButtonContainer = styled.div`
-	height: 200px;
+	margin-top: 2em;
+	height: 5em;
 	width: 70%;
 `;
 

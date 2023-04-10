@@ -22,7 +22,7 @@ export default {
 	fontSizeSmallScreen: {
 		xxxlg: 15,
 		xxlg: 4,
-		xlg: 5,
+		xlg: 3,
 		lg: 1.5,
 		md: 1.2,
 		sm: 0.9,
