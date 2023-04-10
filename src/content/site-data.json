@@ -1,0 +1,51 @@
+{
+	"profile": {
+		"tag": "PROFILE",
+		"tagNumber": "01. ",
+		"social": {
+			"link": "",
+			"name": "@sabbagh._"
+		},
+		"name": "ABDALLAH SABBAGH",
+		"def": "Software Developer",
+		"title": "Mobile & Web",
+		"subtitle": "I Build things for",
+		"description": "I’m a software developer specializing in building (and occasionally designing) exceptional digital experiences. Currently, I’m focused on building creative softwares at OPLUS.",
+		"avatar": "/img/avatar/avatar.jpg"
+	},
+	"projects": [
+		{
+			"tag": "A.",
+			"title": "SHAYV",
+			"subtitle": "Mobile App",
+			"description": "ADIHEX Mobile app is your ultimate event guide and companion, helping you find out all about the event, be entertained with built in mobile games and edutainment and do all your pre-event planning. Onsite, it will also allow you to present your e-ticket at the gates for quick and seamless access to the exhibition halls and conference and workshop theatres and maximize your time at the exhibition",
+			"avatar": "/img/avatar/shayv.png",
+			"social": {
+				"link": "",
+				"name": "@SHAYV"
+			},
+			"tech": ["React Native", "Context API", "Styled-Component"],
+			"meta": {
+				"appstore": "google.com",
+				"playstore": "google.com",
+				"downloads": "4500"
+			}
+		},{
+			"tag": "B.",
+			"title": "ADIHEX",
+			"subtitle": "Mobile App",
+			"description": "ADIHEX Mobile app is your ultimate event guide and companion, helping you find out all about the event, be entertained with built in mobile games and edutainment and do all your pre-event planning. Onsite, it will also allow you to present your e-ticket at the gates for quick and seamless access to the exhibition halls and conference and workshop theatres and maximize your time at the exhibition",
+			"avatar": "/img/avatar/adihex.png",
+			"social": {
+				"link": "",
+				"name": "@ADIHEX"
+			},
+			"tech": ["React Native", "Context API", "Styled-Component"],
+			"meta": {
+				"appstore": "google.com",
+				"playstore": "google.com",
+				"downloads": "4500"
+			}
+		}
+	]
+}
