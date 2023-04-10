@@ -1,4 +1,4 @@
-type cardType = string;
+type cardType = 'profile' | 'project' | string;
 export interface meta {
 	appstore: string;
 	playstore: string;

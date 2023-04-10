@@ -5,17 +5,8 @@ import Card from '../Shared/Card';
 import Content from './Content';
 import data from '../../content/site-data.json';
 function Profile() {
-	const {
-		title,
-		subtitle,
-		name,
-		def,
-		description,
-		avatar,
-		tag,
-		tagNumber,
-		social,
-	} = data.profile;
+	const { title, subtitle, name, def, description, avatar, tag, social } =
+		data.profile;
 	return (
 		<Section>
 			<Left>
@@ -30,7 +21,6 @@ function Profile() {
 					description={description}
 					avatar={avatar}
 					tag={tag}
-					tagNumber={tagNumber}
 					social={social}
 				/>
 			</Right>
