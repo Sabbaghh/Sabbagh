@@ -11,7 +11,12 @@ function Navbar() {
 	const handleScroll = () => {
 		const position = window.pageYOffset;
 		setHideNavbar(position > scrollPosition && !hideNavbar);
+		//some browsers have bouncing effect when scrolling
+		if (position <= 100) {
+			setHideNavbar(false);
+		}
 		setChangeColor(position > 20 && !changeColor);
+
 		scrollPosition = position;
 	};
 
