@@ -18,18 +18,8 @@ function BackDrop({ children, open, onClose }: Props) {
 interface StyledProps {
 	open?: boolean;
 }
-const Container = styled.div<StyledProps>`
-	backdrop-filter: blur(25px);
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: ${(props) => (props.open ? '100%' : '0')};
-	height: 100vh;
-	z-index: 120;
-	transition: all 0.5s ease-in-out;
-`;
 const BackDropItem = styled.div<StyledProps>`
-	background-color: rgba(0, 0, 0, 0.7);
+	background-color: rgba(255, 255, 255, 0.5);
 	-webkit-backdrop-filter: blur(2em);
 	backdrop-filter: blur(25px);
 	position: fixed;
