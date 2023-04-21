@@ -7,17 +7,20 @@ interface Props extends IDProp {
 function Section({ children, id }: Props) {
 	return <Container id={id}>{children}</Container>;
 }
-
 export default Section;
-
 const Container = styled.section`
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-	padding: ${(props) => props.theme.padding.sm};
 	padding-top: 5em;
+	@media (min-width: 768px) {
+		padding: ${(props) => props.theme.padding.md};
+		padding-top: 5em;
+		padding-bottom: 5em;
+	}
 	@media (min-width: 1850px) {
 		padding: ${(props) => props.theme.padding.xlg};
 		padding-top: 10em;
+		padding-bottom: 5em;
 	}
 `;
