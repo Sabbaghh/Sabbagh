@@ -8,10 +8,6 @@ interface Props {
 }
 function BackDrop({ children, open, onClose }: Props) {
 	return (
-		// <Container open={open}>
-		// 	<BackDropItem onClick={onClose} />
-		// 	{children}
-		// </Container>
 		<>
 			<BackDropItem open={open} onClick={onClose} />
 			<ChildrenContainer open={open}>{children}</ChildrenContainer>
@@ -33,6 +29,8 @@ const Container = styled.div<StyledProps>`
 	transition: all 0.5s ease-in-out;
 `;
 const BackDropItem = styled.div<StyledProps>`
+	background-color: rgba(0, 0, 0, 0.7);
+	-webkit-backdrop-filter: blur(2em);
 	backdrop-filter: blur(25px);
 	position: fixed;
 	top: 0;
