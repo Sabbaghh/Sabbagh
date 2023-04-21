@@ -85,6 +85,7 @@ const ContentBody = styled.div`
 	justify-content: space-evenly;
 	align-items: flex-start;
 	flex-direction: column;
+	gap: 1em;
 `;
 
 const ContentFooter = styled.div`

@@ -6,39 +6,37 @@ import Button from '../Shared/Button';
 
 function Contact() {
 	return (
-		<Section>
-			<ContactStyled>
-				<ItemsContainer>
-					<Text
-						size='sm'
-						type={types.secondaryRegular}
-						color='secondary'
-						text={`03 . What’s Next ?`}
-					/>
-					<Divider />
-					<Text
-						align='center'
-						size='xlg'
-						type={types.primaryBold}
-						text={`Get in touch`}
-					/>
-					<Divider />
-					<Text
-						size='md'
-						align='center'
-						color='primaryLight'
-						text={`Although I’m not currently looking for any new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!`}
-					/>
-					<ButtonContainer>
-						<Button />
-					</ButtonContainer>
-				</ItemsContainer>
-			</ContactStyled>
-		</Section>
+		<ContactStyled>
+			<ItemsContainer>
+				<Text
+					size='sm'
+					type={types.secondaryRegular}
+					color='secondary'
+					text={`03 . What’s Next ?`}
+				/>
+				<Divider />
+				<Text
+					align='center'
+					size='xlg'
+					type={types.primaryBold}
+					text={`Get in touch`}
+				/>
+				<Divider />
+				<Text
+					size='md'
+					align='center'
+					color='primaryLight'
+					text={`Although I’m not currently looking for any new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!`}
+				/>
+				<ButtonContainer>
+					<Button />
+				</ButtonContainer>
+			</ItemsContainer>
+		</ContactStyled>
 	);
 }
 
-const ContactStyled = styled.div`
+const ContactStyled = styled(Section)`
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -46,6 +44,8 @@ const ContactStyled = styled.div`
 	justify-self: center;
 	align-self: center;
 	height: 100%;
+	padding-top: 20em;
+	padding-bottom: 20em;
 `;
 
 const ItemsContainer = styled.div`
