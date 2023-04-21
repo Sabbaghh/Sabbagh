@@ -3,12 +3,14 @@ import StyledComponentsRegistry from '../lib/registry';
 import { ThemeProvider } from 'styled-components';
 import theme from '../themes/Primary';
 import styled from 'styled-components';
+import Navbar from './navbar/Navbar';
 interface Props {
 	children?: ReactNode;
 }
 function Layout({ children }: Props) {
 	return (
 		<ThemeProvider theme={theme}>
+			<Navbar />
 			<StyledComponentsRegistry>
 				<Container>{children}</Container>
 			</StyledComponentsRegistry>
