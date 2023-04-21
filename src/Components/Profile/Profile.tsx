@@ -4,11 +4,13 @@ import Section from '../Shared/Section';
 import Card from '../Shared/Card';
 import Content from './Content';
 import data from '../../content/site-data.json';
-function Profile() {
+import { IDProp } from '../types/Global';
+function Profile({ id }: IDProp) {
 	const { title, subtitle, name, def, description, avatar, tag, social } =
 		data.profile;
+
 	return (
-		<Section>
+		<Section id={id}>
 			<Left>
 				<Content title={title} subtitle={subtitle} description={description} />
 			</Left>

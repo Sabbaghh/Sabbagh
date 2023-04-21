@@ -5,8 +5,10 @@ import TabsComponent from './Components/Tabs';
 import Header from './Components/Header';
 import Content from './Components/Content';
 import siteData from '../../content/site-data.json';
+import { IDProp } from '../types/Global';
+
 const { resume: Tabs }: any = siteData;
-function Resume() {
+function Resume({ id }: IDProp) {
 	const [selected, setSelected] = useState({
 		category: '0',
 		subCategory: '0',
@@ -42,7 +44,7 @@ function Resume() {
 		}
 	};
 	return (
-		<Container>
+		<Container id={id}>
 			<CardContainer>
 				<ResumeCard>
 					<Header />
@@ -97,7 +99,7 @@ const ResumeCard = styled.div`
 const Outline = styled(ResumeCard)`
 	position: absolute;
 	z-index: 1;
-	margin: 1.2em 0px 0px 1.2em;
+	margin: 1em 0px 0px 1em;
 `;
 
 const ContentContainer = styled.div`

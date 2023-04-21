@@ -3,10 +3,10 @@ import Section from '../Shared/Section';
 import styled from 'styled-components';
 import Text, { types } from '../Shared/Text';
 import Button from '../Shared/Button';
-
-function Contact() {
+import { IDProp } from '../types/Global';
+function Contact({ id }: IDProp) {
 	return (
-		<ContactStyled>
+		<ContactStyled id={id}>
 			<ItemsContainer>
 				<Text
 					size='sm'

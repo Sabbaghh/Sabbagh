@@ -5,7 +5,8 @@ import Card from '../Shared/Card';
 import { cardTypes } from '../Shared/Card/types';
 import Content from './Content';
 import data from '../../content/site-data.json';
-function Projects() {
+import { IDProp } from '../types/Global';
+function Projects({ id }: IDProp) {
 	return (
 		<>
 			{data.projects.map((project, i) => {
@@ -19,11 +20,10 @@ function Projects() {
 					tech,
 					meta,
 				} = project;
-
 				return (
-					<Section key={i}>
+					<div id={id} key={i}>
 						{i % 2 === 0 ? (
-							<>
+							<Section>
 								<Left>
 									<Card
 										title={title}
@@ -44,9 +44,9 @@ function Projects() {
 										meta={meta}
 									/>
 								</Right>
-							</>
+							</Section>
 						) : (
-							<>
+							<Section>
 								<Left hidesm={true}>
 									<Content
 										subtitle={subtitle}
@@ -68,9 +68,9 @@ function Projects() {
 										cardtype={cardTypes.project}
 									/>
 								</Right>
-							</>
+							</Section>
 						)}
-					</Section>
+					</div>
 				);
 			})}
 		</>
