@@ -29,7 +29,8 @@
 				"playstore": "google.com",
 				"downloads": "4500"
 			}
-		},{
+		},
+		{
 			"tag": "B.",
 			"title": "ADIHEX",
 			"subtitle": "Mobile App",
@@ -46,5 +47,73 @@
 				"downloads": "4500"
 			}
 		}
-	]
+	],
+
+	"resume": {
+		"0": {
+			"_tab": "Experience",
+			"items": {
+				"0": {
+					"_name": "Google",
+					"_type": "descriptive",
+					"company": "Google",
+					"position": "Software Engineer",
+					"start": "2020",
+					"end": "Present",
+					"location": "Mountain View, CA",
+					"description": ["Develop and execute project plans.", "Perform maintenance and software integrations for existing systems.", "Model, simulate, test, and quality assurance."]
+				},
+				"1": {
+					"_name": "OPlus",
+					"_type": "descriptive",
+					"company": "OPlus",
+					"position": "Software Engineer",
+					"start": "2020",
+					"end": "Present",
+					"location": "Mountain View, CA",
+					"description": ["desc 1", "desc 2", "desc 3"]
+				}
+			}
+		},
+		"1": {
+			"_tab": "Education",
+			"items": {
+				"0": {
+					"_name": "Hashemite University",
+					"_type": "descriptive",
+					"company": "Google",
+					"position": "Software Engineer",
+					"start": "2020",
+					"end": "Present",
+					"location": "Mountain View, CA",
+					"description": ["desc 1", "desc 2", "desc 3"]
+				}
+			}
+		},
+		"2": {
+			"_tab": "Certificate",
+			"items": {
+				"0": {
+					"_name": "Hashemite University",
+					"_type": "descriptive",
+					"company": "Google",
+					"position": "Software Engineer",
+					"start": "2020",
+					"end": "Present",
+					"location": "Mountain View, CA",
+					"description": ["desc 1", "desc 2", "desc 3"]
+				}
+			}
+		},
+		"3": {
+			"_tab": "Skills",
+			"items": {
+				"0": {
+					"_name": "Tech skills",
+					"_type": "bulletPoints",
+					"points": ["JavaScript", "React.js", "HTML/HTML5","React Native", "CSS/CSS3", "Next.js","TypeScript", "Redux", "Git / Github","Context API", "JSON","Styled-Components"]
+				}
+			}
+		}
+	}
 }
