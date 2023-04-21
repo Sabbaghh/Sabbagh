@@ -22,6 +22,7 @@ interface Props {
 	color?: string;
 	text: string;
 	align?: string;
+	hover?: boolean;
 }
 
 export const types = {
@@ -59,6 +60,7 @@ function Text(Props: Props) {
 }
 
 const StyledText = styled.span<Props>`
+	transition: color ease-in-out 0.3s;
 	text-align: ${(props) => (props.align ? props.align : 'left')};
 	color: ${(props) =>
 		props.color ? props.theme.colors[props.color] : props.theme.colors.primary};
@@ -79,6 +81,13 @@ const StyledText = styled.span<Props>`
 			props.size
 				? `${props.theme.fontSize[props.size]}rem`
 				: `${props.theme.fontSize.md}rem`};
+	}
+	&:hover {
+		color: ${(props) =>
+			props.hover
+				? props.theme.colors.secondary
+				: props.theme.colors[props.color || 'primary']};
+		cursor: ${(props) => (props.hover ? 'pointer' : 'default')};
 	}
 `;
 export default Text;

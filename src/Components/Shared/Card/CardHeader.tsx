@@ -17,6 +17,7 @@ function CardHeader(props: HeaderProps) {
 			</HeaderItem>
 			<HeaderItem justify='flex-end'>
 				<Text
+					hover
 					color='primaryLight'
 					text={social?.name}
 					size='sm'
