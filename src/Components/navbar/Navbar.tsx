@@ -93,6 +93,15 @@ function Navbar() {
 				</MenuContainer>
 			</BackDrop>
 			<Container changeColor={changeColor} hideNavbar={hideNavbar}>
+				<NavItemContainer>
+					<NavItem onClick={onNavOpen} flexStart>
+						<BurgerButtonContainer>
+							<BurgerButtonSlice />
+							<BurgerButtonSlice width='70%' />
+							<BurgerButtonSlice width='35%' />
+						</BurgerButtonContainer>
+					</NavItem>
+				</NavItemContainer>
 				<NavItemContainer className='Navbar' hideSm flex={2}>
 					{navItems.map((item, i) => (
 						<NavItem href={`#${item.id}`} key={item.id}>
@@ -112,15 +121,6 @@ function Navbar() {
 							/>
 						</NavItem>
 					))}
-				</NavItemContainer>
-				<NavItemContainer>
-					<NavItem onClick={onNavOpen} flexEnd>
-						<BurgerButtonContainer>
-							<BurgerButtonSlice />
-							<BurgerButtonSlice width='70%' />
-							<BurgerButtonSlice width='35%' />
-						</BurgerButtonContainer>
-					</NavItem>
 				</NavItemContainer>
 			</Container>
 		</>
@@ -172,14 +172,14 @@ const NavItemContainer = styled.div<navItemContainerProps>`
 `;
 
 interface navItemProps {
-	flexEnd?: boolean;
+	flexStart?: boolean;
 }
 
 const NavItem = styled.a<navItemProps>`
 	display: flex;
 	flex: 1;
-	justify-content: ${(props) => (props.flexEnd ? 'flex-end' : 'center')};
-	padding-right: ${(props) => (props.flexEnd ? '1em' : '0')};
+	justify-content: ${(props) => (props.flexStart ? 'flex-start' : 'center')};
+	padding-left: ${(props) => (props.flexStart ? '1em' : '0')};
 	align-items: center;
 	gap: 1em;
 	text-decoration: none;
@@ -234,7 +234,7 @@ const BurgerButtonContainer = styled.div`
 	height: 1.5em;
 	width: 2.5em;
 	justify-content: space-between;
-	align-items: flex-end;
+	align-items: flex-start;
 `;
 
 interface BurgerButtonSliceProps {
