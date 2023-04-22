@@ -44,8 +44,8 @@ const ContactStyled = styled(Section)`
 	justify-self: center;
 	align-self: center;
 	height: 100%;
-	padding-top: 20em;
-	padding-bottom: 20em;
+	/* padding-top: 20em;
+	padding-bottom: 20em; */
 `;
 
 const ItemsContainer = styled.div`
@@ -55,7 +55,7 @@ const ItemsContainer = styled.div`
 	display: flex;
 	flex-direction: column;
 	@media (min-width: 768px) {
-		width: 40%;
+		width: 65%;
 	}
 `;
 const Divider = styled.div`

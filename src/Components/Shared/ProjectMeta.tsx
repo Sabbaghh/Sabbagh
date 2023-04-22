@@ -24,7 +24,7 @@ function ProjectMeta(props: IProps) {
 				) : null}
 			</MetaStoreContainer>
 			<MetaDownloadsContainer>
-				<Text text={`${downloads}+` || ''} size='lg' type={types.primaryBold} />
+				<Text text={`${downloads}+` || ''} size='md' type={types.primaryBold} />
 				<Text text='Downloads' size='sm' type={types.secondaryRegular} />
 			</MetaDownloadsContainer>
 		</MetaContainer>

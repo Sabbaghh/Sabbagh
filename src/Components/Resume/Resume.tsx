@@ -16,7 +16,7 @@ function Resume({ id }: IDProp) {
 	const [content, setContent] = useState(Tabs[0].items[0]);
 	// pagination = {current: 1, total: 10}
 	const [pagination, setPagination] = useState({
-		current: 1,
+		current: 0,
 		total: Object.keys(Tabs).length - 1,
 	});
 	const onCategoryChange = (category: string): void => {

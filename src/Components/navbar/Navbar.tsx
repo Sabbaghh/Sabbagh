@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import BackDrop from '../Shared/BackDrops';
 import Text, { types } from '../Shared/Text';
 import { ids } from '@/pages';
+import SocialMedia from '../SocialMedia';
 let scrollPosition = 0;
 function Navbar() {
 	const [hideNavbar, setHideNavbar] = useState(false);
@@ -88,8 +89,9 @@ function Navbar() {
 							</MenuBodyItem>
 						))}
 					</MenuBody>
-
-					<MenuFooter flex={6}></MenuFooter>
+					<MenuFooter flex={3}>
+						<SocialMedia />
+					</MenuFooter>
 				</MenuContainer>
 			</BackDrop>
 			<Container changeColor={changeColor} hideNavbar={hideNavbar}>
@@ -226,7 +228,12 @@ const MenuBodyItem = styled.a`
 	width: 100%;
 `;
 
-const MenuFooter = styled(MenuItem)``;
+const MenuFooter = styled(MenuItem)`
+	justify-content: flex-start;
+	align-items: space-around;
+	width: 80%;
+	align-self: center;
+`;
 
 const BurgerButtonContainer = styled.div`
 	display: flex;
