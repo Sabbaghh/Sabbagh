@@ -7,15 +7,11 @@ import Whatsapp from './icons/Whatsapp';
 function SocialMedia() {
 	return (
 		<Container>
-			<IconContainer>
-				<Github />
-			</IconContainer>
-			<IconContainer>
-				<Linkedin />
-			</IconContainer>
-			<IconContainer>
-				<Whatsapp />
-			</IconContainer>
+			<Github />
+
+			<Linkedin />
+
+			<Whatsapp />
 		</Container>
 	);
 }
@@ -27,10 +23,4 @@ const Container = styled.div`
 	width: 100%;
 `;
 
-const IconContainer = styled.div`
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 1.2em;
-`;
 export default SocialMedia;
