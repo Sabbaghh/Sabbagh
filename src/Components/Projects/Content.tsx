@@ -44,7 +44,12 @@ function Content(props: IProps) {
 					{tech.map((tech, i) => {
 						return (
 							<Tech key={i}>
-								<Text text={tech} size='xsm' type={types.secondaryRegular} />
+								<Text
+									text={tech}
+									size='xsm'
+									type={types.secondaryRegular}
+									color='secondary'
+								/>
 							</Tech>
 						);
 					})}
@@ -79,7 +84,7 @@ const ContentHeader = styled.div`
 `;
 
 const ContentBody = styled.div`
-	flex: 2;
+	flex: 3;
 	width: 100%;
 	display: flex;
 	justify-content: space-evenly;
@@ -107,10 +112,14 @@ const TechContainer = styled.div`
 	display: flex;
 	flex-direction: row;
 	width: 100%;
+	flex-wrap: wrap;
+	gap: 0.5em;
 `;
 const Tech = styled.div`
 	display: block;
-	padding-right: 2rem;
+	padding: 0.5em;
+	border: 1px solid ${(props) => props.theme.colors.secondary};
+	display: flex;
 `;
 
 export default Content;

@@ -2,14 +2,14 @@
 	"profile": {
 		"tag": "PROFILE",
 		"social": {
-			"link": "",
-			"name": "@sabbagh._"
+			"link": "https://www.linkedin.com/in/sabbaghh/",
+			"name": "@sabbaghh"
 		},
 		"name": "ABDALLAH SABBAGH",
 		"def": "Software Developer",
 		"title": "Mobile & Web",
 		"subtitle": "I Build things for",
-		"description": "I’m a software developer specializing in building (and occasionally designing) exceptional digital experiences. Currently, I’m focused on building creative softwares at OPLUS.",
+		"description": "I'm a software developer with a passion for building exceptional digital experiences. With a focus on creative solutions and a love for design, I'm dedicated to exceeding my clients' expectations. Let's work together to create something amazing!",
 		"avatar": "/img/avatar/avatar.jpg"
 	},
 	"projects": [
@@ -17,24 +17,24 @@
 			"tag": "A.",
 			"title": "SHAYV",
 			"subtitle": "Mobile App",
-			"description": "ADIHEX Mobile app is your ultimate event guide and companion, helping you find out all about the event, be entertained with built in mobile games and edutainment and do all your pre-event planning. Onsite, it will also allow you to present your e-ticket at the gates for quick and seamless access to the exhibition halls and conference and workshop theatres and maximize your time at the exhibition",
+			"description": "Shayv is a salon services app that brings the salon to you, wherever you are. Whether you're at work, home, gym, or even the park, Shayv offers a wide range of services for both men and kids. With Shayv, you can book an appointment with your preferred stylist and have them come to your location at your convenience. The app offers a seamless user experience, with easy booking and payment options, making it the ultimate on-demand salon experience.",
 			"avatar": "/img/avatar/shayv.png",
 			"social": {
 				"link": "https://shayv.com",
 				"name": "@SHAYV"
 			},
-			"tech": ["React Native", "Context API", "Styled-Component"],
+			"tech": ["React Native", "react-redux", "Styled-Component"],
 			"meta": {
 				"appstore": "https://apps.apple.com/ae/app/shayv-the-mobile-salon/id1526038085",
 				"playstore": "https://play.google.com/store/apps/details?id=com.shayv&hl=en",
-				"downloads": "4500"
+				"downloads": "2000"
 			}
 		},
 		{
 			"tag": "B.",
 			"title": "ADIHEX",
 			"subtitle": "Mobile App",
-			"description": "ADIHEX Mobile app is your ultimate event guide and companion, helping you find out all about the event, be entertained with built in mobile games and edutainment and do all your pre-event planning. Onsite, it will also allow you to present your e-ticket at the gates for quick and seamless access to the exhibition halls and conference and workshop theatres and maximize your time at the exhibition",
+			"description": "Adihex is the ultimate event guide and companion app, designed to enhance your event experience. With Adihex, you can easily plan your visit to the exhibition, explore the event's various features, and be entertained with built-in mobile games and edutainment. Onsite, the app enables you to present your e-ticket at the gates for quick and seamless access to the exhibition halls and conference and workshop theaters, allowing you to maximize your time at the event.",
 			"avatar": "/img/avatar/adihex.png",
 			"social": {
 				"link": "https://adihex.com",
@@ -48,30 +48,29 @@
 			}
 		}
 	],
-
 	"resume": {
 		"0": {
 			"_tab": "Experience",
 			"items": {
 				"0": {
-					"_name": "Google",
+					"_name": "OPlus Events",
 					"_type": "descriptive",
-					"company": "Google",
-					"position": "Software Engineer",
-					"start": "2020",
+					"company": "OPlus Events",
+					"position": "Software Developer",
+					"start": "09/2021",
 					"end": "Present",
-					"location": "Mountain View, CA",
+					"location": "Dubai, UAE",
 					"description": ["Develop and execute project plans.", "Perform maintenance and software integrations for existing systems.", "Model, simulate, test, and quality assurance."]
 				},
 				"1": {
-					"_name": "OPlus",
+					"_name": "Shayv - The mobile salon",
 					"_type": "descriptive",
-					"company": "OPlus",
-					"position": "Software Engineer",
-					"start": "2020",
+					"company": "Shayv - The mobile salon",
+					"position": "Mobile Application Developer",
+					"start": "09/2021",
 					"end": "Present",
 					"location": "Mountain View, CA",
-					"description": ["desc 1", "desc 2", "desc 3"]
+					"description": ["Build app and UI components from prototypes and wireframes.", "Work with native modules as and when required.", "Work with third-party dependencies and APIs."]
 				}
 			}
 		},
@@ -79,14 +78,14 @@
 			"_tab": "Education",
 			"items": {
 				"0": {
-					"_name": "Hashemite University",
+					"_name": "The Hashemite University",
 					"_type": "descriptive",
-					"company": "Google",
-					"position": "Software Engineer",
-					"start": "2020",
-					"end": "Present",
-					"location": "Mountain View, CA",
-					"description": ["desc 1", "desc 2", "desc 3"]
+					"company": "The Hashemite University",
+					"position": "Bachelor of Computer Science",
+					"start": "09/2017",
+					"end": "09/2021",
+					"location": "Jordan, Zarqa",
+					"description": []
 				}
 			}
 		},
@@ -94,14 +93,14 @@
 			"_tab": "Certificate",
 			"items": {
 				"0": {
-					"_name": "Hashemite University",
+					"_name": "MTA: Introduction to Programming Using Java ",
 					"_type": "descriptive",
-					"company": "Google",
-					"position": "Software Engineer",
-					"start": "2020",
+					"company": "Microsoft",
+					"position": "MTA: Introduction to Programming Using Java",
+					"start": "08/2021",
 					"end": "Present",
-					"location": "Mountain View, CA",
-					"description": ["desc 1", "desc 2", "desc 3"]
+					"location": "Online",
+					"description": []
 				}
 			}
 		},

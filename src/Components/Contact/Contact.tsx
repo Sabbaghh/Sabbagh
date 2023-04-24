@@ -27,7 +27,7 @@ function Contact({ id }: IDProp) {
 					size='md'
 					align='center'
 					color='primaryLight'
-					text={`Although I’m not currently looking for any new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!`}
+					text={`I'm excited to hear from you! Whether you're looking to build a new website, develop a mobile app, or just have a chat about a potential project, don't hesitate to get in touch.`}
 				/>
 				<ButtonContainer>
 					<Button onClick={onContactButtonPress} />
@@ -56,7 +56,7 @@ const ItemsContainer = styled.div`
 	display: flex;
 	flex-direction: column;
 	@media (min-width: 768px) {
-		width: 65%;
+		width: 40%;
 	}
 `;
 const Divider = styled.div`

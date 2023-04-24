@@ -3,8 +3,6 @@ import localFont from 'next/font/local';
 import styled from 'styled-components';
 import { Cairo } from 'next/font/google';
 const SFMono = localFont({ src: '../../Fonts/SFMonoRegular.otf' });
-const CalibreRegular = localFont({ src: '../../Fonts/CalibreRegular.otf' });
-const CalibreSemibold = localFont({ src: '../../Fonts/CalibreSemibold.otf' });
 const cairo = Cairo({
 	weight: '400',
 	style: 'normal',
