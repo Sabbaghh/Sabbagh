@@ -1,14 +1,16 @@
 import React from 'react';
 import Text, { types } from '../../Shared/Text';
 import styled from 'styled-components';
-import Button from '@/Components/Shared/Button';
 function HeaderComponent() {
+	const onResumeClick = () => {
+		window.open('files/resume.pdf', '_blank');
+	};
 	return (
 		<Header>
 			<HeaderItem>
 				<Text size='md' type={types.primaryRegular} text='Resume' />
 			</HeaderItem>
-			<HeaderItem>
+			<HeaderItem onClick={onResumeClick}>
 				<Text
 					hover
 					color='secondary'

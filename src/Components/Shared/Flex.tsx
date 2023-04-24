@@ -12,8 +12,4 @@ export default styled.div<ContainerProps>`
 	justify-content: ${(props) => props.justify || 'center'};
 	align-items: ${(props) => props.align || 'center'};
 	flex-direction: ${(props) => props.direction || 'column'};
-	height: 100%;
-	@media (min-width: 850px) {
-		height: 70%;
-	}
 `;

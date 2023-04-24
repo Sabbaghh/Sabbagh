@@ -1,11 +1,14 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import Text, { types } from './Text';
-
-function Button() {
+interface ButtonProps {
+	onClick?: () => void;
+}
+function Button({ onClick }: ButtonProps) {
 	const [hover, setHover] = useState(false);
 	return (
 		<ButtonContainer
+			onClick={onClick}
 			onMouseOver={() => setHover(true)}
 			onMouseLeave={() => setHover(false)}
 		>

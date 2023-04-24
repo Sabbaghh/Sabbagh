@@ -4,6 +4,7 @@ import Text, { types } from '../Text';
 import Button from '../Button';
 import { FooterProps, cardTypes } from './types';
 import ProjectMeta from '../ProjectMeta';
+import onContactButtonPress from '../../../Helpers/onContactButtonPress';
 function CardFooter(props: FooterProps) {
 	const { cardtype = 'profile', name, def, meta } = props;
 	switch (cardtype) {
@@ -33,7 +34,7 @@ function CardFooter(props: FooterProps) {
 						/>
 					</FooterItem>
 					<FooterItem hidelg={true}>
-						<Button />
+						<Button onClick={onContactButtonPress} />
 					</FooterItem>
 				</CardFooterStyled>
 			);

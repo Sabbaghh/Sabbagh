@@ -30,7 +30,7 @@ export default {
 		xxsm: 0.3,
 	},
 	padding: {
-		xlg: '0 25em',
+		xlg: '0 20em',
 		lg: '0 150px',
 		md: '0 100px',
 		sm: '0 50px',

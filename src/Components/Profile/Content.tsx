@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import Button from '../Shared/Button';
 import Text, { types } from '../Shared/Text';
 import AnimatedLogo from '../Shared/AnimatedLogo';
+import onContactButtonPress from '../../Helpers/onContactButtonPress';
 interface IProps {
 	title: string;
 	subtitle: string;
@@ -26,7 +27,7 @@ function Content(props: IProps) {
 				/>
 			</ContentBody>
 			<ContentFooter>
-				<Button />
+				<Button onClick={onContactButtonPress} />
 			</ContentFooter>
 		</ContentContainer>
 	);

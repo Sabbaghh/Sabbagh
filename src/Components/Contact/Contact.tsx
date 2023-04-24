@@ -3,6 +3,7 @@ import Section from '../Shared/Section';
 import styled from 'styled-components';
 import Text, { types } from '../Shared/Text';
 import Button from '../Shared/Button';
+import onContactButtonPress from '@/Helpers/onContactButtonPress';
 import { IDProp } from '../types/Global';
 function Contact({ id }: IDProp) {
 	return (
@@ -29,7 +30,7 @@ function Contact({ id }: IDProp) {
 					text={`Although I’m not currently looking for any new opportunities, my inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!`}
 				/>
 				<ButtonContainer>
-					<Button />
+					<Button onClick={onContactButtonPress} />
 				</ButtonContainer>
 			</ItemsContainer>
 		</ContactStyled>

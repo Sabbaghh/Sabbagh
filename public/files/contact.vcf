@@ -1,0 +1,11 @@
+BEGIN:VCARD
+VERSION:3.0
+PRODID:-//Apple Inc.//macOS 13.0//EN
+N:Jammazi;Ahmed;;;
+FN:Ahmed Jammazi
+ORG:Shayv ;
+EMAIL;type=INTERNET;type=HOME;type=pref:ahmed@shayv.com
+TEL;type=CELL;type=VOICE;type=pref:+971521353202
+item1.URL;type=pref:shayv.com/download
+item1.X-ABLabel:_$!<HomePage>!$_
+END:VCARD

@@ -4,6 +4,9 @@ import Text, { types } from '../Text';
 import { HeaderProps } from './types';
 function CardHeader(props: HeaderProps) {
 	const { social, tag, title, cardtype } = props;
+	const onSocialClick = (url: string) => {
+		window.open(url, '_blank');
+	};
 	return (
 		<CardHeaderStyled>
 			<HeaderItem flex='3'>
@@ -15,7 +18,7 @@ function CardHeader(props: HeaderProps) {
 					</span>
 				)}
 			</HeaderItem>
-			<HeaderItem justify='flex-end'>
+			<HeaderItem onClick={() => onSocialClick(social.link)} justify='flex-end'>
 				<Text
 					hover
 					color='primaryLight'

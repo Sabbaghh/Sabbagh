@@ -9,17 +9,20 @@ interface IProps {
 }
 function ProjectMeta(props: IProps) {
 	const { downloads, appstore, playstore } = props.meta;
+	const onMetaClick = (url: string) => {
+		window.open(url, '_blank');
+	};
 	return (
 		<MetaContainer>
 			<MetaStoreContainer>
 				{appstore ? (
 					<Tab>
-						<AppStore />
+						<AppStore onClick={() => onMetaClick(appstore)} />
 					</Tab>
 				) : null}
 				{playstore ? (
 					<Tab>
-						<GooglePlay />
+						<GooglePlay onClick={() => onMetaClick(playstore)} />
 					</Tab>
 				) : null}
 			</MetaStoreContainer>

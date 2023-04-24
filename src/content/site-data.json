@@ -20,13 +20,13 @@
 			"description": "ADIHEX Mobile app is your ultimate event guide and companion, helping you find out all about the event, be entertained with built in mobile games and edutainment and do all your pre-event planning. Onsite, it will also allow you to present your e-ticket at the gates for quick and seamless access to the exhibition halls and conference and workshop theatres and maximize your time at the exhibition",
 			"avatar": "/img/avatar/shayv.png",
 			"social": {
-				"link": "",
+				"link": "https://shayv.com",
 				"name": "@SHAYV"
 			},
 			"tech": ["React Native", "Context API", "Styled-Component"],
 			"meta": {
-				"appstore": "google.com",
-				"playstore": "google.com",
+				"appstore": "https://apps.apple.com/ae/app/shayv-the-mobile-salon/id1526038085",
+				"playstore": "https://play.google.com/store/apps/details?id=com.shayv&hl=en",
 				"downloads": "4500"
 			}
 		},
@@ -37,13 +37,13 @@
 			"description": "ADIHEX Mobile app is your ultimate event guide and companion, helping you find out all about the event, be entertained with built in mobile games and edutainment and do all your pre-event planning. Onsite, it will also allow you to present your e-ticket at the gates for quick and seamless access to the exhibition halls and conference and workshop theatres and maximize your time at the exhibition",
 			"avatar": "/img/avatar/adihex.png",
 			"social": {
-				"link": "",
+				"link": "https://adihex.com",
 				"name": "@ADIHEX"
 			},
 			"tech": ["React Native", "Context API", "Styled-Component"],
 			"meta": {
-				"appstore": "google.com",
-				"playstore": "google.com",
+				"appstore": "https://apps.apple.com/ae/app/adihex/id1586088292",
+				"playstore": "https://play.google.com/store/apps/details?id=com.adihex",
 				"downloads": "4500"
 			}
 		}
