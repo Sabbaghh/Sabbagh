@@ -57,10 +57,10 @@ function Navbar() {
 		<>
 			<BackDrop onClose={onNavClose} open={open}>
 				<MenuContainer open={open}>
-					<MenuHeader flex={1}>
+					<MenuHeader onClick={onNavClose} flex={1}>
 						<Text
-							text='>'
-							type={types.primaryRegular}
+							text='X'
+							type={types.primaryBold}
 							size='md'
 							color='secondary'
 						/>
