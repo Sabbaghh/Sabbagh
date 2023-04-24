@@ -33,7 +33,7 @@ function Navbar() {
 		return () => {
 			window.removeEventListener('scroll', handleScroll);
 		};
-	}, []);
+	}, [handleScroll]);
 	const navItems = [
 		{
 			text: 'Profile',
