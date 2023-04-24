@@ -43,7 +43,7 @@ function Card(props: CardProps) {
 
 const CardContainer = styled.div`
 	width: min(800px, 95%);
-	height: max(600px, 50vh);
+	height: max(600px, 65vh);
 	display: flex;
 	position: relative;
 	justify-content: center;

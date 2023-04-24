@@ -34,7 +34,8 @@ function Content(props: IProps) {
 
 const ContentContainer = styled.div`
 	width: min(900px, 85%);
-	height: max(600px, 50vh);
+	/* height: max(600px, 50vh); */
+	height: max(600px, 65vh);
 	/* height: 85vh; */
 	display: flex;
 	justify-content: center;
