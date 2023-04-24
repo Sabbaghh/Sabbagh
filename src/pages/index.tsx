@@ -4,7 +4,7 @@ import Profile from '@/Components/Profile';
 import Resume from '@/Components/Resume';
 import Projects from '@/Components/Projects';
 import Contact from '@/Components/Contact';
-
+import Head from '@/Components/Head';
 export const ids = {
 	profile: 'profile',
 	resume: 'resume',
@@ -13,11 +13,14 @@ export const ids = {
 };
 export default function Home() {
 	return (
-		<Layout>
-			<Profile id={ids.profile} />
-			<Resume id={ids.resume} />
-			<Projects id={ids.projects} />
-			<Contact id={ids.contact} />
-		</Layout>
+		<>
+			<Head />
+			<Layout>
+				<Profile id={ids.profile} />
+				<Resume id={ids.resume} />
+				<Projects id={ids.projects} />
+				<Contact id={ids.contact} />
+			</Layout>
+		</>
 	);
 }
