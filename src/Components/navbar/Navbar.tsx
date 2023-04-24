@@ -56,7 +56,7 @@ function Navbar() {
 	return (
 		<>
 			<BackDrop onClose={onNavClose} open={open}>
-				<MenuContainer>
+				<MenuContainer open={open}>
 					<MenuHeader flex={1}>
 						<Text
 							text='>'
@@ -188,15 +188,20 @@ const NavItem = styled.a<navItemProps>`
 	text-decoration: none;
 `;
 
-const MenuContainer = styled.div`
+interface MenuProps {
+	open: boolean;
+}
+
+const MenuContainer = styled.div<MenuProps>`
 	background: ${(props) => props.theme.colors.background};
 	height: 100%;
-	width: 60vw;
+	width: ${(props) => (props.open ? '60vw' : '0')};
 	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
 	align-items: flex-start;
+	transition: width 0.3s ease-in-out;
 `;
 interface MenuItemProps {
 	flex?: number;

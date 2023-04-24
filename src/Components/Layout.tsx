@@ -1,5 +1,4 @@
 import React, { ReactNode } from 'react';
-import StyledComponentsRegistry from '../lib/registry';
 import { ThemeProvider } from 'styled-components';
 import theme from '../themes/Primary';
 import styled from 'styled-components';
@@ -11,13 +10,11 @@ interface Props {
 function Layout({ children }: Props) {
 	return (
 		<ThemeProvider theme={theme}>
-			<StyledComponentsRegistry>
-				<Container>
-					<Navbar />
-					{children}
-					<Footer />
-				</Container>
-			</StyledComponentsRegistry>
+			<Container>
+				<Navbar />
+				{children}
+				<Footer />
+			</Container>
 		</ThemeProvider>
 	);
 }
