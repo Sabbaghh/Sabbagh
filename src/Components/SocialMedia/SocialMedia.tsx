@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Linkedin from './icons/Linkedin';
 import Whatsapp from './icons/Whatsapp';
-import Github from './icons/Github';
+import GithubButton from './icons/GithubButton';
 let socialsLink = {
 	github: 'https://github.com/Sabbaghh',
 	linkedin: 'https://www.linkedin.com/in/sabbaghh/',
@@ -14,7 +14,7 @@ function SocialMedia() {
 	};
 	return (
 		<Container>
-			<Github onClick={() => onSocialClick(socialsLink.github)} />
+			<GithubButton onClick={() => onSocialClick(socialsLink.github)} />
 			<Linkedin onClick={() => onSocialClick(socialsLink.linkedin)} />
 			<Whatsapp onClick={() => onSocialClick(socialsLink.whatsapp)} />
 		</Container>
