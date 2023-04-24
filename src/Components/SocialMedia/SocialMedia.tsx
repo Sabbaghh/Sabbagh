@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Github from './icons/Github';
+// import Github from './icons/Github';
 import Linkedin from './icons/Linkedin';
 import Whatsapp from './icons/Whatsapp';
 let socialsLink = {
@@ -14,7 +14,7 @@ function SocialMedia() {
 	};
 	return (
 		<Container>
-			<Github onClick={() => onSocialClick(socialsLink.github)} />
+			{/* <Github onClick={() => onSocialClick(socialsLink.github)} /> */}
 			<Linkedin onClick={() => onSocialClick(socialsLink.linkedin)} />
 			<Whatsapp onClick={() => onSocialClick(socialsLink.whatsapp)} />
 		</Container>
