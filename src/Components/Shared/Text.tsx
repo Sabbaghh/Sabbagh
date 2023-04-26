@@ -21,6 +21,7 @@ interface Props {
 	text: string;
 	align?: string;
 	hover?: boolean;
+	as?: 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'p' | 'span';
 }
 
 export const types = {
@@ -32,19 +33,23 @@ function Text(Props: Props) {
 	switch (Props.type) {
 		case types.primaryBold:
 			return (
-				<StyledText {...Props} className={cairoSemiBold.className}>
+				<StyledText
+					as={Props.as}
+					{...Props}
+					className={cairoSemiBold.className}
+				>
 					{Props.text}
 				</StyledText>
 			);
 		case types.primaryRegular:
 			return (
-				<StyledText {...Props} className={cairo.className}>
+				<StyledText as={Props.as} {...Props} className={cairo.className}>
 					{Props.text}
 				</StyledText>
 			);
 		case types.secondaryRegular:
 			return (
-				<StyledText {...Props} className={SFMono.className}>
+				<StyledText as={Props.as} {...Props} className={SFMono.className}>
 					{Props.text}
 				</StyledText>
 			);

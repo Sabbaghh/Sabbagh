@@ -10,6 +10,7 @@ function CardBody(props: BodyProps) {
 				<CardBodyStyled>
 					<BodyItem>
 						<Text
+							as='h2'
 							text={description || ''}
 							size='sm'
 							type={types.primaryRegular}
@@ -22,16 +23,23 @@ function CardBody(props: BodyProps) {
 				<CardBodyStyled>
 					<BodyItem>
 						<Text
+							as='span'
 							text={subtitle || ''}
 							size='sm'
 							type={types.secondaryRegular}
 						/>
 					</BodyItem>
 					<BodyItem>
-						<Text text={title || ''} size='lg' type={types.primaryBold} />
+						<Text
+							as='h1'
+							text={title || ''}
+							size='lg'
+							type={types.primaryBold}
+						/>
 					</BodyItem>
 					<BodyItem>
 						<Text
+							as='p'
 							text={description || ''}
 							size='sm'
 							type={types.primaryRegular}

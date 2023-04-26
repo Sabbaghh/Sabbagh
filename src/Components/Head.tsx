@@ -2,7 +2,7 @@ import React from 'react';
 import Header from 'next/head';
 
 const description = `
-Abdallah Sabbagh is a freelance frontend and mobile developer based in Dubai, UAE. With expertise in HTML, CSS, JavaScript, React, and React Native, he delivers high-quality results for clients. Hire Abdallah Sabbagh to elevate your web and mobile projects in Dubai and the UAE's dynamic tech scene.
+Abdallah Sabbagh is a freelance front-end and mobile developer based in Dubai, UAE, with expertise in HTML, CSS, JavaScript, React, and React Native.
 `;
 
 const site = 'https://sabbagh.info';

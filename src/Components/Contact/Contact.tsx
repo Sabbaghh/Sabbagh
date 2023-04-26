@@ -17,6 +17,7 @@ function Contact({ id }: IDProp) {
 				/>
 				<Divider />
 				<Text
+					as='h1'
 					align='center'
 					size='xlg'
 					type={types.primaryBold}
@@ -24,6 +25,7 @@ function Contact({ id }: IDProp) {
 				/>
 				<Divider />
 				<Text
+					as='p'
 					size='md'
 					align='center'
 					color='primaryLight'

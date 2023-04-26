@@ -18,8 +18,9 @@ function Content(props: IProps) {
 			</ContentHeader>
 			<ContentBody>
 				<Text text={subtitle} size='sm' type={types.secondaryRegular} />
-				<Text text={title} size='xxlg' type={types.primaryBold} />
+				<Text as='h1' text={title} size='xxlg' type={types.primaryBold} />
 				<Text
+					as='p'
 					color='primaryLight'
 					text={description}
 					size='md'

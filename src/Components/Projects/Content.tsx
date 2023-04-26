@@ -32,13 +32,15 @@ function Content(props: IProps) {
 					size='sm'
 					type={types.secondaryRegular}
 					color='secondary'
+					as='p'
 				/>
-				<Text text={title} size='xxlg' type={types.primaryBold} />
+				<Text as='h1' text={title} size='xxlg' type={types.primaryBold} />
 				<Text
 					color='primaryLight'
 					text={description}
 					size='sm'
 					type={types.primaryRegular}
+					as='p'
 				/>
 				<TechContainer>
 					{tech.map((tech, i) => {

@@ -21,6 +21,7 @@ function TabsComponent(props: props) {
 					<Tab key={i} selected={isCategorySelected}>
 						<TabHeader onClick={() => onCategoryChange(tabIndex)}>
 							<Text
+								as='h5'
 								hover
 								size='sm'
 								text={Tabs[tabIndex]._tab || ''}
@@ -36,6 +37,7 @@ function TabsComponent(props: props) {
 									key={i}
 								>
 									<Text
+										as='h6'
 										hover
 										color={
 											isCategorySelected && isSubCategorySelected

@@ -23,23 +23,26 @@ function Content(props: props) {
 					<Header>
 						<HeaderItem>
 							<Text
+								as='h1'
 								type={types.primaryBold}
 								size='md'
 								text={content.position}
 							/>
 						</HeaderItem>
 						<HeaderItem>
-							<Text text={content.company} />
+							<Text as='h3' text={content.company} />
 						</HeaderItem>
 						<HeaderItem>
 							<TimeLocationContainer>
 								<Text
+									as='span'
 									size='xsm'
 									type={types.secondaryRegular}
 									color='secondary'
 									text={date}
 								/>
 								<Text
+									as='span'
 									size='xsm'
 									type={types.secondaryRegular}
 									color='secondary'
@@ -53,18 +56,19 @@ function Content(props: props) {
 							return (
 								<ContentItem key={i}>
 									<Text
+										as='span'
 										type={types.primaryRegular}
 										color='secondary'
 										text={'>'}
 									/>
-									<Text size='sm' text={item} />
+									<Text as='p' size='sm' text={item} />
 								</ContentItem>
 							);
 						})}
 					</ContentContainer>
-					<Footer>
+					{/* <Footer>
 						<Pagination pagination={pagination} onPagination={onPagination} />
-					</Footer>
+					</Footer> */}
 				</Container>
 			);
 		case tabsTypes.bulletPoints:
@@ -80,6 +84,7 @@ function Content(props: props) {
 										text={'>'}
 									/>
 									<Text
+										as='p'
 										size='sm'
 										type={types.secondaryRegular}
 										text={content.points[key]}
@@ -88,9 +93,9 @@ function Content(props: props) {
 							);
 						})}
 					</BulletPointsContainer>
-					<Footer>
+					{/* <Footer>
 						<Pagination pagination={pagination} onPagination={onPagination} />
-					</Footer>
+					</Footer> */}
 				</Container>
 			);
 		default:
